@@ -10,11 +10,6 @@ const shelvesList = document.getElementById("shelves-list");
 // global variables
 const shelfList = [];
 
-// Event Listeners
-document.addEventListener("DOMContentLoaded", createShelves);
-addShelfButton.addEventListener("click", addShelfElement);
-shelvesList.addEventListener("click", deleteShelfElement);
-
 // functions
 
 // a function to add items to the shelf array
@@ -56,3 +51,8 @@ const deleteShelfElement = function (event) {
     createShelves();
   }
 };
+
+// Event Listeners
+document.addEventListener("DOMContentLoaded", createShelves);
+addShelfButton.addEventListener("click", addShelfElement);
+shelvesList.addEventListener("click", deleteShelfElement);
